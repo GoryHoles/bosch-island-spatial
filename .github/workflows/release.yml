@@ -1,0 +1,120 @@
+name: Build And Release
+
+on:
+  push:
+    branches:
+      - main
+    tags:
+      - "v*"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build-windows:
+    runs-on: windows-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup CMake
+        uses: jwlawson/actions-setup-cmake@v2
+
+      - name: Build Windows
+        shell: pwsh
+        run: .\build.ps1
+
+      - name: Stage Windows package
+        shell: pwsh
+        run: |
+          New-Item -ItemType Directory -Force -Path release/windows | Out-Null
+          $dll = Get-ChildItem -Recurse -Filter theisle_spatial.dll | Select-Object -First 1
+          if (-not $dll) { throw "theisle_spatial.dll not found" }
+          Copy-Item $dll.FullName release/windows/theisle_spatial.dll
+          Copy-Item .\theisle_spatial.ini release/windows/theisle_spatial.ini
+          Compress-Archive -Path release/windows/* -DestinationPath release/bosch-island-spatial-windows.zip -Force
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: windows-package
+          path: release/bosch-island-spatial-windows.zip
+
+  build-linux:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install build tools
+        run: sudo apt-get update && sudo apt-get install -y cmake g++ zip
+
+      - name: Build Linux
+        run: |
+          chmod +x build-linux.sh
+          ./build-linux.sh
+
+      - name: Stage Linux package
+        run: |
+          mkdir -p release/linux
+          so_path="$(find build_linux_release -name theisle_spatial.so -print -quit)"
+          test -n "$so_path"
+          cp "$so_path" release/linux/theisle_spatial.so
+          cp theisle_spatial.ini release/linux/theisle_spatial.ini
+          cd release/linux
+          zip -r ../bosch-island-spatial-linux.zip .
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: linux-package
+          path: release/bosch-island-spatial-linux.zip
+
+  build-steamdeck:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install build tools
+        run: sudo apt-get update && sudo apt-get install -y cmake g++ zip
+
+      - name: Build Steam Deck
+        run: |
+          chmod +x build-linux.sh
+          ./build-linux.sh --steamdeck
+
+      - name: Stage Steam Deck package
+        run: |
+          mkdir -p release/steamdeck
+          so_path="$(find build_linux_steamdeck_release -name theisle_spatial_steamdeck.so -print -quit)"
+          test -n "$so_path"
+          cp "$so_path" release/steamdeck/theisle_spatial_steamdeck.so
+          cp theisle_spatial_steamdeck.ini release/steamdeck/theisle_spatial_steamdeck.ini
+          cd release/steamdeck
+          zip -r ../bosch-island-spatial-steamdeck.zip .
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: steamdeck-package
+          path: release/bosch-island-spatial-steamdeck.zip
+
+  release:
+    if: startsWith(github.ref, 'refs/tags/v')
+    needs:
+      - build-windows
+      - build-linux
+      - build-steamdeck
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          path: artifacts
+
+      - name: Create Release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: |
+            artifacts/windows-package/bosch-island-spatial-windows.zip
+            artifacts/linux-package/bosch-island-spatial-linux.zip
+            artifacts/steamdeck-package/bosch-island-spatial-steamdeck.zip
