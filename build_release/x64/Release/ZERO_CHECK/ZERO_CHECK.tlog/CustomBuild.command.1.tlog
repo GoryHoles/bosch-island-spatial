@@ -1,0 +1,10 @@
+^C:\THEISLESERVER\SERVER\THEISLE\MUMBLE_PLUGIN\BUILD_RELEASE\CMAKEFILES\3415DD337E86093F3A65A652F8DB899D\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/TheIsleServer/server/TheIsle/mumble_plugin -BC:/TheIsleServer/server/TheIsle/mumble_plugin/build_release --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/TheIsleServer/server/TheIsle/mumble_plugin/build_release/TheIsleSpatialPlugin.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

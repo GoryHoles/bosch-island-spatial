@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="aa279d3c-2ca0-4ce2-ac63-ca139de68062" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/build_release/INSTALL.vcxproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build_release/INSTALL.vcxproj.filters" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build_release/Release/theisle_spatial.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build_release/Release/theisle_spatial.exp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build_release/Release/theisle_spatial.lib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build_release/TheIsleSpatialPlugin.sln" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build_release/ZERO_CHECK.vcxproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build_release/ZERO_CHECK.vcxproj.filters" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build_release/cmake_install.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build_release/theisle_spatial.dir/Release/connection.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build_release/theisle_spatial.dir/Release/plugin.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build_release/theisle_spatial.dir/Release/theisle_spatial.dll.recipe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build_release/theisle_spatial.dir/Release/theisle_spatial.tlog/CL.command.1.tlog" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build_release/theisle_spatial.dir/Release/theisle_spatial.tlog/CL.read.1.tlog" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build_release/theisle_spatial.dir/Release/theisle_spatial.tlog/CL.write.1.tlog" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build_release/theisle_spatial.dir/Release/theisle_spatial.tlog/Cl.items.tlog" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build_release/theisle_spatial.dir/Release/theisle_spatial.tlog/CustomBuild.command.1.tlog" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build_release/theisle_spatial.dir/Release/theisle_spatial.tlog/CustomBuild.read.1.tlog" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build_release/theisle_spatial.dir/Release/theisle_spatial.tlog/CustomBuild.write.1.tlog" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build_release/theisle_spatial.dir/Release/theisle_spatial.tlog/link.command.1.tlog" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build_release/theisle_spatial.dir/Release/theisle_spatial.tlog/link.read.1.tlog" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build_release/theisle_spatial.dir/Release/theisle_spatial.tlog/link.secondary.1.tlog" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build_release/theisle_spatial.dir/Release/theisle_spatial.tlog/link.write.1.tlog" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build_release/theisle_spatial.dir/Release/theisle_spatial.tlog/theisle_spatial.lastbuildstate" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build_release/theisle_spatial.vcxproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build_release/theisle_spatial.vcxproj.filters" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build_release/x64/Release/ALL_BUILD/ALL_BUILD.recipe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build_release/x64/Release/ALL_BUILD/ALL_BUILD.tlog/ALL_BUILD.lastbuildstate" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build_release/x64/Release/ALL_BUILD/ALL_BUILD.tlog/CustomBuild.command.1.tlog" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build_release/x64/Release/ALL_BUILD/ALL_BUILD.tlog/CustomBuild.read.1.tlog" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build_release/x64/Release/ALL_BUILD/ALL_BUILD.tlog/CustomBuild.write.1.tlog" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build_release/x64/Release/ZERO_CHECK/ZERO_CHECK.recipe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build_release/x64/Release/ZERO_CHECK/ZERO_CHECK.tlog/CustomBuild.command.1.tlog" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build_release/x64/Release/ZERO_CHECK/ZERO_CHECK.tlog/CustomBuild.read.1.tlog" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build_release/x64/Release/ZERO_CHECK/ZERO_CHECK.tlog/CustomBuild.write.1.tlog" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build_release/x64/Release/ZERO_CHECK/ZERO_CHECK.tlog/ZERO_CHECK.lastbuildstate" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/BoschIslandSpatialSetup-1.0.0.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/BoschIslandSpatialSetup-1.0.1.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/installer/TheIsleSpatial.iss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sdk/MumblePlugin.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/audio_state.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/config.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/connection.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/connection.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/plugin.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/theisle_spatial.ini" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/theisle_spatial_steamdeck.ini" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="EmbeddingIndexingInfo">
+    <option name="cachedIndexableFilesCount" value="53" />
+    <option name="fileBasedEmbeddingIndicesEnabled" value="true" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="McpProjectServerCommands">
+    <commands />
+    <urls />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 2
+}]]></component>
+  <component name="ProjectId" id="3BmT0Ev8ILlsF4vpcqVYqEcWqEw" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.MCP Project settings loaded": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/aaron/OneDrive/Desktop/mumble_plugin",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-9b0f141eb926-JavaScript-PS-253.31033.138" />
+        <option value="bundled-php-predefined-a98d8de5180a-0e0d91225499-com.jetbrains.php.sharedIndexes-PS-253.31033.138" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="aa279d3c-2ca0-4ce2-ac63-ca139de68062" name="Changes" comment="" />
+      <created>1775093020639</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1775093020639</updated>
+      <workItem from="1775093021719" duration="174000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
